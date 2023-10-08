@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    
+    <!-- Formulir Pendaftaran -->
+    <div class="container" id="formulir">
+        <h2>Formulir Pendaftaran</h2>
+        <form action="/proses-pendaftaran" method="post">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required><br>
+    
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+    
+            <label for="nohp">Nomor HP:</label>
+            <input type="tel" id="nohp" name="nohp" required><br>
+    
+            <label for="jeniskelamin">Jenis Kelamin:</label>
+            <select id="jeniskelamin" name="jeniskelamin" required>
+                <option value="laki-laki">Laki-laki</option>
+                <option value="perempuan">Perempuan</option>
+            </select><br>
+    
+            <label for="agama">Agama:</label>
+            <input type="text" id="agama" name="agama" required><br>
+    
+            <input type="submit" value="Daftar">
+        </form>
+    </div>
+</body>
+</html>
